@@ -76,6 +76,7 @@ sans-serif;
 
     .promo_text {
         margin-bottom: 72px;
+        padding: 0 13px;
         font-family: $robo-font;
         font-weight: 300;
         font-size: 21px;
@@ -91,17 +92,87 @@ sans-serif;
         }
     }
 
-    .write_btn {
+    .promo_btn {
         margin-left: calc((100% - 313px)/2);
         margin-bottom: 95px;
         width: 313px;
         height: 72px;
-        border: 0;
+        border: 1px solid rgba(0, 0, 0, 0.23);
         background: linear-gradient(0deg, #2798B9 0%, #3AB6DA 100%);
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+        box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.18);
         font-family: $robo-font;
         font-size: 21px;
         text-transform: uppercase;
         color: #fff;
+        border-radius: 5px;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:active {
+            border: 1px solid #000;
+            border-color: #fff;
+        }
+    }
+
+    .more {
+        margin: 0 auto;
+        width: 264px;
+        height: 52px;
+
+        .more_text {
+            margin-bottom: 5px;
+            font-family: $robo-font;
+            font-style: normal;
+            font-weight: 100;
+            font-size: 15px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        .more_img {
+            margin: 0 auto;
+            width: 34px;
+            height: 23px;
+            background-image: url('/assets/icons/down.png');
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+.waiting {
+    padding: 88px 0 75px 0;
+    height: 607px;
+    background-color: #efefef;
+
+    .waiting_title {
+        margin-bottom: 18px;
+        font-family: $robo-font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #252525;
+    }
+
+    .line {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        width: 217px;
+        height: 4px;
+        background-color: $yel-col;
+    }
+
+    .waiting_text {
+        margin-bottom: 45px;
+        font-family: $robo-font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 23px;
+        text-align: center;
+        color: #4A4A4A;
     }
 }
