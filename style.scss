@@ -4,14 +4,45 @@ $robo-font: 'Roboto',
 sans-serif;
 
 * {
-    // box-sizing: border-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+h1, h2, h3 {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: $robo-font;
 }
 
 .wrapper {
     max-width: 1140px;
     margin: 0 auto;
+}
+
+.btn {
+    display: block;
+    margin: 0 auto;
+    width: 313px;
+    height: 72px;
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    background: linear-gradient(0deg, #2798B9 0%, #3AB6DA 100%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    font-size: 21px;
+    text-transform: uppercase;
+    color: #fff;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:active {
+        border: 1px solid #000;
+        border-color: #fff;
+    }
 }
 
 .promo {
@@ -35,7 +66,6 @@ sans-serif;
         .logo_text {
             width: 200px;
             height: 24;
-            font-family: $robo-font;
             font-weight: 500;
             font-size: 15px;
             text-transform: uppercase;
@@ -46,7 +76,6 @@ sans-serif;
 
     h1.title {
         margin-bottom: 20px;
-        font-family: $robo-font;
         font-weight: 900;
         font-size: 41px;
         color: $yel-col;
@@ -56,7 +85,6 @@ sans-serif;
         margin-bottom: 20px;
 
         .title {
-            font-family: $robo-font;
             font-weight: 900;
             font-size: 80px;
             color: #fff;
@@ -65,9 +93,7 @@ sans-serif;
     }
 
     .title {
-        margin-bottom: 22px;
         margin-bottom: 20px;
-        font-family: $robo-font;
         font-weight: 900;
         font-size: 41px;
         color: $yel-col;
@@ -77,7 +103,6 @@ sans-serif;
     .promo_text {
         margin-bottom: 72px;
         padding: 0 13px;
-        font-family: $robo-font;
         font-weight: 300;
         font-size: 21px;
         line-height: 28px;
@@ -85,7 +110,6 @@ sans-serif;
         color: #fff;
 
         span {
-            font-family: $robo-font;
             font-weight: 700;
             font-size: 21px;
             color: $yel-col;
@@ -93,27 +117,7 @@ sans-serif;
     }
 
     .promo_btn {
-        margin-left: calc((100% - 313px)/2);
-        margin-bottom: 95px;
-        width: 313px;
-        height: 72px;
-        border: 1px solid rgba(0, 0, 0, 0.23);
-        background: linear-gradient(0deg, #2798B9 0%, #3AB6DA 100%);
-        box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.18);
-        font-family: $robo-font;
-        font-size: 21px;
-        text-transform: uppercase;
-        color: #fff;
-        border-radius: 5px;
-
-        &:hover {
-            cursor: pointer;
-        }
-
-        &:active {
-            border: 1px solid #000;
-            border-color: #fff;
-        }
+        margin-bottom: 70px;
     }
 
     .more {
@@ -123,8 +127,6 @@ sans-serif;
 
         .more_text {
             margin-bottom: 5px;
-            font-family: $robo-font;
-            font-style: normal;
             font-weight: 100;
             font-size: 15px;
             text-align: center;
@@ -144,13 +146,11 @@ sans-serif;
 
 .waiting {
     padding: 88px 0 75px 0;
-    height: 607px;
+    max-height: 607px;
     background-color: #efefef;
 
     .waiting_title {
         margin-bottom: 18px;
-        font-family: $robo-font;
-        font-style: normal;
         font-weight: 400;
         font-size: 30px;
         text-align: center;
@@ -168,11 +168,225 @@ sans-serif;
 
     .waiting_text {
         margin-bottom: 45px;
-        font-family: $robo-font;
-        font-style: normal;
         font-weight: 400;
         font-size: 23px;
         text-align: center;
         color: #4A4A4A;
+    }
+
+    .waiting_item_container {
+        margin: 0 auto;
+        width: 1122px;
+        display: flex;
+        justify-content: space-between;
+
+        .waiting_item {
+            width: 342px;
+
+            .waiting_item_logo {
+                width: 100%;
+                height: 201px;
+                margin-bottom: 26px;
+            }
+
+            #logo_one {
+                background-image: url('/assets/img/waiting_1.png');
+            }
+
+            #logo_two {
+                background-image: url('/assets/img/waiting_2.png');
+            }
+
+            #logo_three {
+                background-image: url('/assets/img/waiting_3.png');
+            }
+
+            .waiting_item_content {
+                font-weight: 300;
+                font-size: 15px;
+                line-height: 21px;
+                text-align: center;
+                color: #4A4A4A;
+            }
+        }
+    }
+}
+
+.optimization {
+    padding: 47px 391px 0 0;
+
+    .opti_container {
+        width: 1379px;
+        height: 502px;
+        background-image: url('/assets/img/woman_bg.png');
+        background-repeat: no-repeat;
+
+        .opti_content {
+            width: 748px;
+            margin: 61px 0 0 629px;
+
+            .opti_title {
+                font-weight: 900;
+                font-size: 30px;
+                align-items: center;
+                text-transform: uppercase;
+                color: #299CBD;
+            }
+
+            .opti_descr {
+                font-weight: 300;
+                font-size: 17px;
+                line-height: 27px;
+                align-items: center;
+                color: #4A4A4A;
+
+                span {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+.the_end {
+    height: 447px;
+    padding-top: 86px;
+    background-image: url('/assets/img/second_bg.png');
+
+    .end_title {
+        margin-bottom: 18px;
+        font-weight: 400;
+        font-size: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #EFEFEF;
+    }
+
+    .end_line {
+        margin: 0 auto;
+        margin-bottom: 39px;
+        width: 217px;
+        height: 4px;
+        background-color: $yel-col;
+    }
+
+    .end_items_container {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .end_item {
+            width: 232px;
+
+            .end_item_logo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+                width: 118px;
+                height: 118px;
+                margin-bottom: 24.5px;
+                border-radius: 100px;
+                background-color: #b4e2ff;
+
+                .logo_img {
+                    display: block;
+                }
+            }
+
+            .end_item_descr {
+                font-weight: 300;
+                font-size: 17px;
+                text-align: center;
+                color: #EFEFEF;
+            }
+        }
+    }
+}
+
+.gift {
+    width: 100%;
+    min-height: 631px;
+    padding: 88px 0;
+    background-color: #EFEFEF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    .gift_logo {
+        width: 154px;
+        height: 174px;
+        margin: 0 auto;
+        margin-bottom: 45px;
+        background-image: url('/assets/img/Rectangle.png');
+    }
+
+    .gift_text {
+        margin-bottom: 51px;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 43px;
+        text-align: center;
+        color: #252525;
+    }
+}
+
+.first_webinar {
+    min-height: 512px;
+    padding-top: 81px;
+
+    .fw_content_container {
+        width: 580px;
+        min-height: 433;
+        margin: 0 auto;
+        padding-top: 8px;
+
+        .fw_logo {
+            width: 342px;
+            height: 201px;
+            margin: 0 auto;
+            margin-bottom: 36px;
+            background-image: url('/assets/img/first.png');
+        }
+
+        .fw_title {
+            margin-bottom: 30px;
+            font-weight: 400;
+            font-size: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #252525;
+        }
+
+        .fw_date {
+            margin-bottom: 24px;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 36px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #299CBD;
+        }
+
+        .fw_descr {
+            font-weight: 400;
+            font-size: 23px;
+            text-align: center;
+            color: #4A4A4A;
+        }
+    }
+}
+
+footer {
+    min-height: 166px;
+    padding-top: 55px;
+    background-color: #1a1a1a;
+
+    .footer_contacts {
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 21px;
+        text-align: center;
+        text-decoration-line: underline;
+        color: #888888;
     }
 }

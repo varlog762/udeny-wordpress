@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/CSS/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Wordpress интенсив</title>
 </head>
@@ -23,8 +26,10 @@
                 <div class="line"></div>
             </div>
             <h2 class="title">Куда сложнее сделать это правильно!</h2>
-            <div class="promo_text">Ежедневно в России появляется более 5 000 новых сайтов.<br>И только единицы из них становятся популярными и приносят ощутимую прибыль. В чем секрет? В чем формула успеха? Узнайте на предстоящем двухдневном <span>БЕСПЛАТНОМ</span> интенсиве!</div>
-            <button class="promo_btn">Записаться на интенсив!</button>
+            <div class="promo_text">Ежедневно в России появляется более 5 000 новых сайтов.<br>И только единицы из них
+                становятся популярными и приносят ощутимую прибыль. В чем секрет? В чем формула успеха? Узнайте на
+                предстоящем двухдневном <span>БЕСПЛАТНОМ</span> интенсиве!</div>
+            <button class="btn promo_btn">Записаться на интенсив!</button>
             <div class="more">
                 <div class="more_text">узнать больше об интенсиве</div>
                 <div class="more_img"></div>
@@ -37,36 +42,115 @@
             <h2 class="waiting_title">Что вас ждет в нашем интенсиве?</h2>
             <div class="line"></div>
             <div class="waiting_text">2 бесплатных полноценных обучающих вебинара, где:</div>
-            <div class="waiting_wrapper_container">
+            <div class="waiting_item_container">
                 <div class="waiting_item">
-                    <div class="waiting_item_logo"></div>
+                    <div class="waiting_item_logo" id="logo_one"></div>
                     <div class="waiting_item_content">Всего за два бесплатных вебинара мы научим вас,
                         как создать свой сайт на WordPress. </div>
                 </div>
                 <div class="waiting_item">
-                    <div class="waiting_item_logo"></div>
-                    <div class="waiting_item_content">Покажем, как правильно оптимизировать сайт и сделать его привлекательным для поисковых систем. Только свежая, профессиональная и актуальная информация!</div>
+                    <div class="waiting_item_logo" id="logo_two"></div>
+                    <div class="waiting_item_content">Покажем, как правильно оптимизировать сайт и сделать его
+                        привлекательным для поисковых систем. Только свежая, профессиональная и актуальная информация!
+                    </div>
                 </div>
                 <div class="waiting_item">
-                    <div class="waiting_item_logo"></div>
-                    <div class="waiting_item_content">Вы узнаете, что такое «хорошая индексация»,<br>«высокая посещаемость», «стабильный прирост посетителей», «ТОП по запросам» и, что намного важнее, как добиться всех этих показателей!</div>
+                    <div class="waiting_item_logo" id="logo_three"></div>
+                    <div class="waiting_item_content">Вы узнаете, что такое «хорошая индексация»,<br>«высокая
+                        посещаемость», «стабильный прирост посетителей», «ТОП по запросам» и, что намного важнее, как
+                        добиться всех этих показателей!</div>
                 </div>
             </div>
         </div>
     </section>
     <section class="optimization">
-        <div class="wrapper"></div>
+        <div class="wrapper">
+            <div class="opti_container">
+                <div class="opti_logo"></div>
+                <div class="opti_content">
+                    <h3 class="opti_title">Что такое оптимизация и зачем она нужна?</h3>
+                    <div class="opti_descr">На просторах интернета несчетное количество действующих и даже заброшенных
+                        сайтов. Большинство из них совпадает не только по категориям, но и по содержанию.<br><br>
+                        Представьте себе тысячи сайтов, на которых тем или иным образом предоставляется одна и та же
+                        информация или
+                        продается одна и та же услуга. И попасть на эти сайты можно лишь по тематическим запросам в
+                        поисковых системах.<br><br>
+                        Но как вам быть, если ваш сайт похож на сотню или тысячу таких же, а на одной странице гугла или
+                        яндекса всего 10 позиций?
+                        Как привести посетителей страницы своего ресурса? Именно для этого и нужна оптимизация – для
+                        вывода вашего сайта на первую страницу поиска!<br><br>
+                        <span>Мы
+                            научим вас, как сделать ваш сайт привлекательным для поисковых систем и посоветуем, как
+                            вывести
+                            его на первые страницы, обходя всех конкурентов.</span></div>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="the_end">
-        <div class="wrapper"></div>
+        <div class="wrapper">
+            <div class="end_title">По окончании обучения Вы сможете!</div>
+            <div class="end_line"></div>
+            <div class="end_items_container">
+                <div class="end_item">
+                    <div class="end_item_logo">
+                        <img class="logo_img" src="/assets/icons/finish_icon_1.png" alt="1"></img>
+                    </div>
+                    <div class="end_item_descr">Создать свой сайт или<br>блог</div>
+                </div>
+                <div class="end_item">
+                    <div class="end_item_logo">
+                        <img class="logo_img" src="/assets/icons/finish_icon_2.png" alt="2"></img>
+                    </div>
+                    <div class="end_item_descr">Правильно его<br>оптимизировать</div>
+                </div>
+                <div class="end_item">
+                    <div class="end_item_logo">
+                        <img class="logo_img" src="/assets/icons/finish_icon_3.png" alt="3"></img>
+                    </div>
+                    <div class="end_item_descr">Обеспечить ему медлен-<br>
+                        ный, но верный рост в<br>ТОП</div>
+                </div>
+                <div class="end_item">
+                    <div class="end_item_logo">
+                        <img class="logo_img" src="/assets/icons/finish_icon_4.png" alt="4"></img>
+                    </div>
+                    <div class="end_item_descr">Достигнуть стабильного<br>прироста посетителей</div>
+                </div>
+                <div class="end_item">
+                    <div class="end_item_logo">
+                        <img class="logo_img" src="/assets/icons/finish_icon_5.png" alt="5"></img>
+                    </div>
+                    <div class="end_item_descr">Получать ощутимую<br>прибыль</div>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="gift">
-        <div class="wrapper"></div>
+        <div class="wrapper">
+            <div class="gift_logo"></div>
+            <div class="gift_text">Для всех участников интенсива предусмотрены бонусы и подарки. Нажимайте<br>
+                на кнопку ниже, принимайте участие в вебинарах и забирайте свой приз по<br>
+                окончании обучения!</div>
+            <button class="btn gift_btn">Записаться на интенсив!</button>
+        </div>
     </section>
     <section class="first_webinar">
-        <div class="wrapper"></div>
+        <div class="wrapper">
+            <div class="fw_content_container">
+                <div class="fw_logo"></div>
+                <h3 class="fw_title">Первый вебинар состоится:</h3>
+                <div class="fw_date">10 сентября в 20:00 по Москве</div>
+                <div class="fw_descr">Успейте записаться, количество мест ограничено!</div>
+            </div>
+        </div>
     </section>
-    <footer></footer>
+    <footer>
+        <div class="wrapper">
+            <div class="footer_contacts">Служба поддержки | Политика конфиденциальности<br>Позвоните нам 8-800-555-01-21
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
